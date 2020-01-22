@@ -20,5 +20,14 @@
         android:layout_height="wrap_content"
         android:text="Mi PolyLine"
         android:onClick="PolyLine"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi Polygon"
+        android:onClick="Polygon"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mapa de Calor"
+        android:onClick="mimapacalor"/>
 </LinearLayout>
