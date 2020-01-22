@@ -29,4 +29,12 @@ public class MainActivity extends AppCompatActivity {
   public void mimapacalor(View view) {
     startActivity(new Intent(this,MapaCalor.class));
   }
+
+  public void miclustermap(View view) {
+    startActivity(new Intent(this,MiClusterMap.class));
+  }
+
+  public void distancia(View view) {
+    startActivity(new Intent(this,DistanciaDosPuntos.class));
+  }
 }

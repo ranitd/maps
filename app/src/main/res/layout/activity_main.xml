@@ -30,4 +30,14 @@
         android:layout_height="wrap_content"
         android:text="Mapa de Calor"
         android:onClick="mimapacalor"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi Cluster Map"
+        android:onClick="miclustermap"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distancia Lineal"
+        android:onClick="distancia"/>
 </LinearLayout>

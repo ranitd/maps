@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MapaCalor"></activity>
+        <activity android:name=".DistanciaDosPuntos"></activity>
+        <activity android:name=".MiClusterMap" />
+        <activity android:name=".MapaCalor" />
         <activity android:name=".MiPolygon" />
         <activity android:name=".MiPolyLine" />
 
