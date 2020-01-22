@@ -16,7 +16,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-public class DistanciaDosPuntos  extends FragmentActivity implements OnMapReadyCallback {
+public class DistanciaDosPuntos  extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMarkerDragListener {
   GoogleMap mapa; Marker punto1, punto2; TextView txtdistancia;
   Polyline polyline;
   @Override
@@ -40,6 +40,34 @@ public class DistanciaDosPuntos  extends FragmentActivity implements OnMapReadyC
                     punto1.getPosition(),
                     new LatLng(-18.006907, -70.252508)
             ));
+    //establece la distancia entre 2 puntos
     txtdistancia.setText(Util.formatDistanceBetween(punto1.getPosition(),punto2.getPosition()));
+
+    mapa.setOnMarkerDragListener(this);
+  }
+
+  @Override
+  public void onMarkerDragStart(Marker marker) {
+//Cuando se inicia el desplazamiento
+    if(polyline!=null) polyline.remove();
+    PolylineOptions polylineOptions = new PolylineOptions()
+            .add( punto1.getPosition(),
+                    punto2.getPosition()).clickable(true);
+    polyline=mapa.addPolyline(polylineOptions);
+    txtdistancia.setText(Util.formatDistanceBetween(punto1.getPosition(),punto2.getPosition()));
+  }
+  @Override
+  public void onMarkerDrag(Marker marker) {
+//Cuando estamos desplazando el icono
+    if(polyline!=null) polyline.remove();
+    PolylineOptions polylineOptions = new PolylineOptions()
+            .add( punto1.getPosition(),
+                    punto2.getPosition()).clickable(true);
+    polyline=mapa.addPolyline(polylineOptions);
+    txtdistancia.setText(Util.formatDistanceBetween(punto1.getPosition(),punto2.getPosition()));
+  }
+  @Override
+  public void onMarkerDragEnd(Marker marker) {
+//Cuando se termina el desplazamiento
   }
 }
