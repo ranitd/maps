@@ -61,15 +61,24 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:text="Dibujar"
+                android:layout_weight="0.5"
+                android:text="create polygon"
                 android:id="@+id/btndibujar"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Limpiar"
+                android:text="delete"
                 android:layout_weight="0.5"
                 android:id="@+id/btnlimpiar"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="create list"
+                android:layout_weight="0.5"
+                android:id="@+id/btnlist"/>
+
+
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
