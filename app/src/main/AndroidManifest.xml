@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.u1tema5androidgooglemaps">
+    package="com.example.VehiclesMap">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DistanciaDosPuntos"></activity>
-        <activity android:name=".MiClusterMap" />
-        <activity android:name=".MapaCalor" />
-        <activity android:name=".MiPolygon" />
-        <activity android:name=".MiPolyLine" />
+        <activity android:name=".IdList"></activity>
+        <activity android:name=".DrawPolygon" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -23,7 +20,7 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name=".MiMapa" />
+        <activity android:name=".MapOfVehicles" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

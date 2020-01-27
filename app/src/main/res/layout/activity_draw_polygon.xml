@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MiPolygon">
+    tools:context=".DrawPolygon">
     <fragment
-        android:id="@+id/mapa"
+        android:id="@+id/map"
         class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,44 +15,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="40"
+        android:layout_weight="10"
         android:padding="10dp"
         android:orientation="vertical">
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pintar Polygon"
-            android:textStyle="bold"
-            android:id="@+id/checkpolygon"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Color polygon"
-            android:textStyle="bold" />
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="255"
-            android:thumbTint="#FF0000"
-            android:progressTint="#FF0000"
-            android:layout_marginTop="5dp"
-            android:id="@+id/seek_rojo"/>
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="255"
-            android:thumbTint="#00FF00"
-            android:progressTint="#00FF00"
-            android:layout_marginTop="5dp"
-            android:id="@+id/seek_verde"/>
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="255"
-            android:thumbTint="#0000FF"
-            android:progressTint="#0000FF"
-            android:layout_marginTop="5dp"
-            android:id="@+id/seek_azul"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,13 +28,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:text="create polygon"
-                android:id="@+id/btndibujar"/>
+                android:id="@+id/btndraw"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:text="delete"
                 android:layout_weight="0.5"
-                android:id="@+id/btnlimpiar"/>
+                android:id="@+id/btndelete"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

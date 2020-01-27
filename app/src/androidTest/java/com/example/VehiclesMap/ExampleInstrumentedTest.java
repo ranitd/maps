@@ -1,4 +1,4 @@
-package com.example.u1tema5androidgooglemaps;
+package com.example.VehiclesMap;
 
 import android.content.Context;
 

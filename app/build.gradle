@@ -7,7 +7,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.u1tema5androidgooglemaps"
+        applicationId "com.example.VehicleMap"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
@@ -32,4 +32,8 @@ dependencies {
 
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
     implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    // compile 'com.googlecode.json-simple:json-simple:1.1.1'
+   // implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    //compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
 }

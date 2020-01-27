@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='U1Tema5AndroidGoogleMaps'
+rootProject.name='VehiclesMap'
