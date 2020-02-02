@@ -1,4 +1,4 @@
-# maps
+# autofleet
 
 The purpose of this project is to enable the fleet manager to see the vehicle locations, 
 and to be able to choose vehicles within an area, this is achieved by drawing a polygon on the map (and see their ids).
